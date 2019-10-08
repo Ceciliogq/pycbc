@@ -93,6 +93,14 @@ pycbc.libutils module
     :undoc-members:
     :show-inheritance:
 
+pycbc.mchirp\_area module
+-------------------------
+
+.. automodule:: pycbc.mchirp_area
+    :members:
+    :undoc-members:
+    :show-inheritance:
+
 pycbc.opt module
 ----------------
 

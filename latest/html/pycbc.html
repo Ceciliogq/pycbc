@@ -167,6 +167,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#module-pycbc.detector">pycbc.detector module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-pycbc.dq">pycbc.dq module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-pycbc.libutils">pycbc.libutils module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-pycbc.mchirp_area">pycbc.mchirp_area module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-pycbc.opt">pycbc.opt module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-pycbc.pnutils">pycbc.pnutils module</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#module-pycbc.pool">pycbc.pool module</a></li>
@@ -2750,6 +2751,43 @@ and header directories</p>
 linking against the list of packages given as ‘packages’. An empty return list means
 that the package may be found in the standard system locations, irrespective of
 pkg-config.</p>
+</dd></dl>
+
+</div>
+<div class="section" id="module-pycbc.mchirp_area">
+<span id="pycbc-mchirp-area-module"></span><h2>pycbc.mchirp_area module<a class="headerlink" href="#module-pycbc.mchirp_area" title="Permalink to this headline">¶</a></h2>
+<p>Functions to compute the area corresponding to different CBC on the m1 &amp; m2
+plane when given a central mchirp value and uncertainty.
+It also includes a function that calculates the source frame when given the
+detector frame mass and redshift.</p>
+<dl class="function">
+<dt id="pycbc.mchirp_area.calc_areas">
+<code class="descclassname">pycbc.mchirp_area.</code><code class="descname">calc_areas</code><span class="sig-paren">(</span><em>trig_mc_det</em>, <em>mass_limits</em>, <em>mass_bdary</em>, <em>z</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/mchirp_area.html#calc_areas"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.mchirp_area.calc_areas" title="Permalink to this definition">¶</a></dt>
+<dd><p>Computes the area inside the lines of the second component mass as a
+function of the first component mass for the two extreme values
+of mchirp: mchirp +/- mchirp_uncertainty, for each region of the source
+classifying diagram.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycbc.mchirp_area.intmc">
+<code class="descclassname">pycbc.mchirp_area.</code><code class="descname">intmc</code><span class="sig-paren">(</span><em>mc</em>, <em>x_min</em>, <em>x_max</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/mchirp_area.html#intmc"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.mchirp_area.intmc" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the integral of mchange between the minimum and maximum values
+of a component mass taking mchirp as an argument.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycbc.mchirp_area.mchange">
+<code class="descclassname">pycbc.mchirp_area.</code><code class="descname">mchange</code><span class="sig-paren">(</span><em>x</em>, <em>mc</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/mchirp_area.html#mchange"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.mchirp_area.mchange" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a component mass as a function of mchirp and the other
+component mass.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="pycbc.mchirp_area.src_mass_from_z_det_mass">
+<code class="descclassname">pycbc.mchirp_area.</code><code class="descname">src_mass_from_z_det_mass</code><span class="sig-paren">(</span><em>z</em>, <em>del_z</em>, <em>mdet</em>, <em>del_mdet</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/mchirp_area.html#src_mass_from_z_det_mass"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.mchirp_area.src_mass_from_z_det_mass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes values of redshift, redshift uncertainty, detector mass and its
+uncertainty and computes the source mass and its uncertainty.</p>
 </dd></dl>
 
 </div>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.strain.strain &mdash; PyCBC 4b3ff2 documentation</title>
+  <title>pycbc.strain.strain &mdash; PyCBC 84e8c9 documentation</title>
   
 
   
@@ -408,6 +408,8 @@
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="n">gating_info</span> <span class="o">=</span> <span class="p">{}</span>
 
+    <span class="n">injector</span> <span class="o">=</span> <span class="n">InjectionSet</span><span class="o">.</span><span class="n">from_cli</span><span class="p">(</span><span class="n">opt</span><span class="p">)</span>
+
     <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">frame_cache</span> <span class="ow">or</span> <span class="n">opt</span><span class="o">.</span><span class="n">frame_files</span> <span class="ow">or</span> <span class="n">opt</span><span class="o">.</span><span class="n">frame_type</span> <span class="ow">or</span> <span class="n">opt</span><span class="o">.</span><span class="n">hdf_store</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">frame_cache</span><span class="p">:</span>
             <span class="n">frame_source</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">frame_cache</span>
@@ -453,9 +455,8 @@
             <span class="n">l</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">normalize_strain</span>
             <span class="n">strain</span> <span class="o">=</span> <span class="n">strain</span> <span class="o">/</span> <span class="n">l</span>
 
-        <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">injector</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Applying injections&quot;</span><span class="p">)</span>
-            <span class="n">injector</span> <span class="o">=</span> <span class="n">InjectionSet</span><span class="p">(</span><span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span><span class="p">)</span>
             <span class="n">injections</span> <span class="o">=</span> \
                 <span class="n">injector</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">strain</span><span class="p">,</span> <span class="n">opt</span><span class="o">.</span><span class="n">channel_name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span>
                                <span class="n">distance_scale</span><span class="o">=</span><span class="n">opt</span><span class="o">.</span><span class="n">injection_scale_factor</span><span class="p">,</span>
@@ -591,9 +592,8 @@
                              <span class="s1">&#39;ifo:channel (e.g. H1:CALIB-STRAIN) to inject &#39;</span>
                              <span class="s1">&#39;simulated signals into fake strain&#39;</span><span class="p">)</span>
 
-        <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">injector</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
             <span class="n">logging</span><span class="o">.</span><span class="n">info</span><span class="p">(</span><span class="s2">&quot;Applying injections&quot;</span><span class="p">)</span>
-            <span class="n">injector</span> <span class="o">=</span> <span class="n">InjectionSet</span><span class="p">(</span><span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span><span class="p">)</span>
             <span class="n">injections</span> <span class="o">=</span> \
                 <span class="n">injector</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">strain</span><span class="p">,</span> <span class="n">opt</span><span class="o">.</span><span class="n">channel_name</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">],</span>
                                <span class="n">distance_scale</span><span class="o">=</span><span class="n">opt</span><span class="o">.</span><span class="n">injection_scale_factor</span><span class="p">,</span>
@@ -623,7 +623,7 @@
                              <span class="n">pd_taper_window</span><span class="p">)</span> <span class="p">)</span>
         <span class="n">gate_data</span><span class="p">(</span><span class="n">strain</span><span class="p">,</span> <span class="n">gate_params</span><span class="p">)</span>
 
-    <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">injector</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
         <span class="n">strain</span><span class="o">.</span><span class="n">injections</span> <span class="o">=</span> <span class="n">injections</span>
     <span class="n">strain</span><span class="o">.</span><span class="n">gating_info</span> <span class="o">=</span> <span class="n">gating_info</span>
 
@@ -744,6 +744,15 @@
     <span class="n">data_reading_group</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--injection-scale-factor&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
                     <span class="n">default</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">help</span><span class="o">=</span><span class="s2">&quot;Divide injections by this factor &quot;</span>
                     <span class="s2">&quot;before injecting into the data.&quot;</span><span class="p">)</span>
+
+    <span class="n">data_reading_group</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--injection-f-ref&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
+                                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Reference frequency in Hz for &#39;</span>
+                                         <span class="s1">&#39;creating CBC injections from an XML &#39;</span>
+                                         <span class="s1">&#39;file.&#39;</span><span class="p">)</span>
+
+    <span class="n">data_reading_group</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s1">&#39;--injection-f-final&#39;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">float</span><span class="p">,</span>
+                                    <span class="n">help</span><span class="o">=</span><span class="s1">&#39;Override the f_final field of a CBC &#39;</span>
+                                         <span class="s1">&#39;XML injection file.&#39;</span><span class="p">)</span>
 
     <span class="n">data_reading_group</span><span class="o">.</span><span class="n">add_argument</span><span class="p">(</span><span class="s2">&quot;--gating-file&quot;</span><span class="p">,</span> <span class="nb">type</span><span class="o">=</span><span class="nb">str</span><span class="p">,</span>
                     <span class="n">help</span><span class="o">=</span><span class="s2">&quot;(optional) Text file of gating segments to apply.&quot;</span>
@@ -1919,7 +1928,7 @@
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 08, 2019.
+        Last updated on Oct 09, 2019.
       </span>
 
     </p>

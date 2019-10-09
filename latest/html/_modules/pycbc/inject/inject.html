@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.inject.inject &mdash; PyCBC 4b3ff2 documentation</title>
+  <title>pycbc.inject.inject &mdash; PyCBC 84e8c9 documentation</title>
   
 
   
@@ -374,10 +374,7 @@
                           <span class="k">if</span> <span class="n">inj</span><span class="o">.</span><span class="n">simulation_id</span> <span class="ow">in</span> <span class="n">simulation_ids</span><span class="p">]</span>
         <span class="n">injection_parameters</span> <span class="o">=</span> <span class="p">[]</span>
         <span class="k">for</span> <span class="n">inj</span> <span class="ow">in</span> <span class="n">injections</span><span class="p">:</span>
-            <span class="k">if</span> <span class="n">f_lower</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-                <span class="n">f_l</span> <span class="o">=</span> <span class="n">inj</span><span class="o">.</span><span class="n">f_lower</span>
-            <span class="k">else</span><span class="p">:</span>
-                <span class="n">f_l</span> <span class="o">=</span> <span class="n">f_lower</span>
+            <span class="n">f_l</span> <span class="o">=</span> <span class="n">inj</span><span class="o">.</span><span class="n">f_lower</span> <span class="k">if</span> <span class="n">f_lower</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">f_lower</span>
             <span class="c1"># roughly estimate if the injection may overlap with the segment</span>
             <span class="c1"># Add 2s to end_time to account for ringdown and light-travel delay</span>
             <span class="n">end_time</span> <span class="o">=</span> <span class="n">inj</span><span class="o">.</span><span class="n">get_time_geocent</span><span class="p">()</span> <span class="o">+</span> <span class="mi">2</span>
@@ -390,7 +387,7 @@
             <span class="k">if</span> <span class="n">end_time</span> <span class="o">&lt;</span> <span class="n">t0</span> <span class="ow">or</span> <span class="n">start_time</span> <span class="o">&gt;</span> <span class="n">t1</span><span class="p">:</span>
                 <span class="k">continue</span>
             <span class="n">signal</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">make_strain_from_inj_object</span><span class="p">(</span><span class="n">inj</span><span class="p">,</span> <span class="n">strain</span><span class="o">.</span><span class="n">delta_t</span><span class="p">,</span>
-                     <span class="n">detector_name</span><span class="p">,</span> <span class="n">f_lower</span><span class="o">=</span><span class="n">f_l</span><span class="p">,</span> <span class="n">distance_scale</span><span class="o">=</span><span class="n">distance_scale</span><span class="p">)</span>
+                    <span class="n">detector_name</span><span class="p">,</span> <span class="n">f_lower</span><span class="o">=</span><span class="n">f_l</span><span class="p">,</span> <span class="n">distance_scale</span><span class="o">=</span><span class="n">distance_scale</span><span class="p">)</span>
             <span class="k">if</span> <span class="nb">float</span><span class="p">(</span><span class="n">signal</span><span class="o">.</span><span class="n">start_time</span><span class="p">)</span> <span class="o">&gt;</span> <span class="n">t1</span><span class="p">:</span>
                 <span class="k">continue</span>
 
@@ -437,10 +434,7 @@
 <span class="sd">            h(t) corresponding to the injection.</span>
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="n">detector</span> <span class="o">=</span> <span class="n">Detector</span><span class="p">(</span><span class="n">detector_name</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">f_lower</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
-            <span class="n">f_l</span> <span class="o">=</span> <span class="n">inj</span><span class="o">.</span><span class="n">f_lower</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">f_l</span> <span class="o">=</span> <span class="n">f_lower</span>
+        <span class="n">f_l</span> <span class="o">=</span> <span class="n">inj</span><span class="o">.</span><span class="n">f_lower</span> <span class="k">if</span> <span class="n">f_lower</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">f_lower</span>
 
         <span class="n">name</span><span class="p">,</span> <span class="n">phase_order</span> <span class="o">=</span> <span class="n">legacy_approximant_name</span><span class="p">(</span><span class="n">inj</span><span class="o">.</span><span class="n">waveform</span><span class="p">)</span>
 
@@ -1058,7 +1052,22 @@
             <span class="k">else</span><span class="p">:</span>
                 <span class="n">injcls</span> <span class="o">=</span> <span class="n">hdfinjtypes</span><span class="p">[</span><span class="n">injtype</span><span class="p">]</span>
             <span class="n">injcls</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">samples</span><span class="p">,</span> <span class="n">write_params</span><span class="p">,</span> <span class="n">static_args</span><span class="p">,</span>
-                         <span class="o">**</span><span class="n">metadata</span><span class="p">)</span></div></div>
+                         <span class="o">**</span><span class="n">metadata</span><span class="p">)</span></div>
+
+<div class="viewcode-block" id="InjectionSet.from_cli"><a class="viewcode-back" href="../../../pycbc.inject.html#pycbc.inject.inject.InjectionSet.from_cli">[docs]</a>    <span class="nd">@staticmethod</span>
+    <span class="k">def</span> <span class="nf">from_cli</span><span class="p">(</span><span class="n">opt</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Return an instance of InjectionSet configured as specified</span>
+<span class="sd">        on the command line.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="k">return</span> <span class="kc">None</span>
+
+        <span class="n">kwa</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_f_ref</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">kwa</span><span class="p">[</span><span class="s1">&#39;f_ref&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_f_ref</span>
+        <span class="k">if</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_f_final</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">kwa</span><span class="p">[</span><span class="s1">&#39;f_final&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">opt</span><span class="o">.</span><span class="n">injection_f_final</span>
+        <span class="k">return</span> <span class="n">InjectionSet</span><span class="p">(</span><span class="n">opt</span><span class="o">.</span><span class="n">injection_file</span><span class="p">,</span> <span class="o">**</span><span class="n">kwa</span><span class="p">)</span></div></div>
 
 
 <div class="viewcode-block" id="SGBurstInjectionSet"><a class="viewcode-back" href="../../../pycbc.inject.html#pycbc.inject.inject.SGBurstInjectionSet">[docs]</a><span class="k">class</span> <span class="nc">SGBurstInjectionSet</span><span class="p">(</span><span class="nb">object</span><span class="p">):</span>
@@ -1165,7 +1174,7 @@
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 08, 2019.
+        Last updated on Oct 09, 2019.
       </span>
 
     </p>

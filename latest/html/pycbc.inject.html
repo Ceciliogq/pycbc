@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.inject package &mdash; PyCBC 6c28da documentation</title>
+  <title>pycbc.inject package &mdash; PyCBC 8308b8 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                None
+                1.14.2
               </div>
             
           
@@ -292,10 +292,10 @@ injection if necessary.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.7)">None</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a></p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – For invalid types of <cite>strain</cite>.</p>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – For invalid types of <cite>strain</cite>.</p>
 </td>
 </tr>
 </tbody>
@@ -325,7 +325,7 @@ injection if necessary.</li>
 <li><strong>inj</strong> (<em>injection object</em>) – The injection object to turn into a strain h(t). Can be any
 object which has waveform parameters as attributes, such as an
 element in a <code class="docutils literal notranslate"><span class="pre">WaveformArray</span></code>.</li>
-<li><strong>delta_t</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Sample rate to make injection at.</li>
+<li><strong>delta_t</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Sample rate to make injection at.</li>
 <li><strong>detector_name</strong> (<em>string</em>) – Name of the detector used for projecting injections.</li>
 <li><strong>f_lower</strong> (<em>{None</em><em>, </em><em>float}</em><em>, </em><em>optional</em>) – Low-frequency cutoff for injected signals. If None, use value
 provided by each injection.</li>
@@ -337,7 +337,7 @@ no scaling.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>signal</strong> – h(t) corresponding to the injection.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)">float</a></p>
 </td>
 </tr>
 </tbody>
@@ -354,7 +354,7 @@ no scaling.</li>
 <dl class="class">
 <dt id="pycbc.inject.inject.InjectionSet">
 <em class="property">class </em><code class="descclassname">pycbc.inject.inject.</code><code class="descname">InjectionSet</code><span class="sig-paren">(</span><em>sim_file</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inject/inject.html#InjectionSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inject.inject.InjectionSet" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Manages sets of injections and injects them into time series.</p>
 <p>Injections are read from either LIGOLW XML files or HDF files.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -392,13 +392,13 @@ on the command line.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The name of the file to write to.</li>
+<li><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The name of the file to write to.</li>
 <li><strong>samples</strong> (<em>io.FieldArray</em>) – FieldArray of parameters.</li>
-<li><strong>write_params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the given parameter names. All given names must be keys
+<li><strong>write_params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the given parameter names. All given names must be keys
 in <code class="docutils literal notranslate"><span class="pre">samples</span></code>. Default is to write all parameters in <code class="docutils literal notranslate"><span class="pre">samples</span></code>.</li>
-<li><strong>static_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Dictionary mapping static parameter names to values. These are
+<li><strong>static_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Dictionary mapping static parameter names to values. These are
 written to the <code class="docutils literal notranslate"><span class="pre">attrs</span></code>.</li>
-<li><strong>injtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – Specify which <cite>HDFInjectionSet</cite> class to use for writing. If not
+<li><strong>injtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – Specify which <cite>HDFInjectionSet</cite> class to use for writing. If not
 provided, will try to determine it by looking for an approximant in
 the <code class="docutils literal notranslate"><span class="pre">static_args</span></code>, followed by the <code class="docutils literal notranslate"><span class="pre">samples</span></code>.</li>
 <li><strong>**metadata</strong> – All other keyword arguments will be written to the file’s attrs.</li>
@@ -449,7 +449,7 @@ and injects it into time series.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>strain</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.timeseries.TimeSeries" title="pycbc.types.timeseries.TimeSeries"><em>TimeSeries</em></a>) – Time series to inject signals into, of type float32 or float64.</li>
 <li><strong>detector_name</strong> (<em>string</em>) – Name of the detector used for projecting injections.</li>
-<li><strong>distance_scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – Factor to scale the distance of an injection with. The default (=1)
+<li><strong>distance_scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a><em>, </em><em>optional</em>) – Factor to scale the distance of an injection with. The default (=1)
 is no scaling.</li>
 <li><strong>simulation_ids</strong> (<em>iterable</em><em>, </em><em>optional</em>) – If given, only inject signals with the given simulation IDs.</li>
 <li><strong>inj_filter_rejector</strong> (<em>InjFilterRejector instance</em><em>, </em><em>optional</em>) – Not implemented. If not <code class="docutils literal notranslate"><span class="pre">None</span></code>, a <code class="docutils literal notranslate"><span class="pre">NotImplementedError</span></code> will
@@ -460,12 +460,12 @@ be raised.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.7)">None</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a></p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
-<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#NotImplementedError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">NotImplementedError</span></code></a> – If an <code class="docutils literal notranslate"><span class="pre">inj_filter_rejector</span></code> is provided.</li>
-<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – For invalid types of <cite>strain</cite>.</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#NotImplementedError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">NotImplementedError</span></code></a> – If an <code class="docutils literal notranslate"><span class="pre">inj_filter_rejector</span></code> is provided.</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – For invalid types of <cite>strain</cite>.</li>
 </ul>
 </td>
 </tr>
@@ -496,9 +496,9 @@ an hdf file.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>inj</strong> (<em>injection object</em>) – The injection object to turn into a strain h(t).</li>
-<li><strong>delta_t</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Sample rate to make injection at.</li>
+<li><strong>delta_t</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Sample rate to make injection at.</li>
 <li><strong>detector_name</strong> (<em>string</em>) – Name of the detector used for projecting injections.</li>
-<li><strong>distance_scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – Factor to scale the distance of an injection with. The default (=1)
+<li><strong>distance_scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a><em>, </em><em>optional</em>) – Factor to scale the distance of an injection with. The default (=1)
 is no scaling.</li>
 </ul>
 </td>
@@ -506,7 +506,7 @@ is no scaling.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"><strong>signal</strong> – h(t) corresponding to the injection.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)">float</a></p>
 </td>
 </tr>
 </tbody>
@@ -523,7 +523,7 @@ is no scaling.</li>
 <dl class="class">
 <dt id="pycbc.inject.inject.SGBurstInjectionSet">
 <em class="property">class </em><code class="descclassname">pycbc.inject.inject.</code><code class="descname">SGBurstInjectionSet</code><span class="sig-paren">(</span><em>sim_file</em>, <em>**kwds</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inject/inject.html#SGBurstInjectionSet"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inject.inject.SGBurstInjectionSet" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Manages sets of sine-Gaussian burst injections: reads injections
 from LIGOLW XML files and injects them into time series.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -566,10 +566,10 @@ no scaling.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first"></p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.7)">None</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first"><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.8)">None</a></p>
 </td>
 </tr>
-<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – For invalid types of <cite>strain</cite>.</p>
+<tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">TypeError</span></code></a> – For invalid types of <cite>strain</cite>.</p>
 </td>
 </tr>
 </tbody>
@@ -588,7 +588,7 @@ that attribute isn’t set, will default to <a class="reference internal" href="
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sim_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of the file. The file must already exist.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>sim_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of the file. The file must already exist.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The type of HDFInjectionSet to use.</td>
 </tr>
@@ -606,7 +606,7 @@ that attribute isn’t set, will default to <a class="reference internal" href="
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>approximant</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of the approximant.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>approximant</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of the approximant.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The type of HDFInjectionSet to use.</td>
 </tr>
@@ -645,7 +645,7 @@ testing the “similarity” of templates and injections.</p>
 <dl class="class">
 <dt id="pycbc.inject.injfilterrejector.InjFilterRejector">
 <em class="property">class </em><code class="descclassname">pycbc.inject.injfilterrejector.</code><code class="descname">InjFilterRejector</code><span class="sig-paren">(</span><em>injection_file</em>, <em>chirp_time_window</em>, <em>match_threshold</em>, <em>f_lower</em>, <em>coarsematch_deltaf=1.0</em>, <em>coarsematch_fmax=256</em>, <em>seg_buffer=10</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inject/injfilterrejector.html#InjFilterRejector"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inject.injfilterrejector.InjFilterRejector" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Class for holding parameters for using injection/template pre-filtering.</p>
 <p>This class is responsible for identifying where a matched-filter operation
 between templates and data is unncessary because the injections contained
@@ -746,7 +746,7 @@ templates.</p>
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 11, 2019.
+        Last updated on Oct 21, 2019.
       </span>
 
     </p>

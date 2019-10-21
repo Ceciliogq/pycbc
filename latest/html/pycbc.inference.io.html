@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.inference.io package &mdash; PyCBC 6c28da documentation</title>
+  <title>pycbc.inference.io package &mdash; PyCBC 8308b8 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                None
+                1.14.2
               </div>
             
           
@@ -277,7 +277,7 @@ handling reading and writing the samples from the samplers.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The path to the HDF file.</li>
+<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The path to the HDF file.</li>
 <li><strong>mode</strong> (<em>{None</em><em>, </em><em>str}</em>) – The mode to open the file, eg. “w” for write and “r” for read.</li>
 </ul>
 </td>
@@ -311,7 +311,7 @@ the last command line used is returned.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>other</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em> or </em><em>InferenceFile</em>) – The file to write to. May be either a string giving a filename,
+<li><strong>other</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><em>InferenceFile</em>) – The file to write to. May be either a string giving a filename,
 or an open hdf file. If the former, the file will be opened with
 the write attribute (note that if a file already exists with that
 name, it will be deleted).</li>
@@ -319,11 +319,11 @@ name, it will be deleted).</li>
 samples will be copied.</li>
 <li><strong>parameters</strong> (<em>list of str</em><em>, </em><em>optional</em>) – List of parameters in the samples group to copy. If None, will copy
 all parameters.</li>
-<li><strong>parameter_names</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Rename one or more parameters to the given name. The dictionary
+<li><strong>parameter_names</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Rename one or more parameters to the given name. The dictionary
 should map parameter -&gt; parameter name. If None, will just use the
 original parameter names.</li>
-<li><strong>read_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">read_samples</span></code>.</li>
-<li><strong>write_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">write_samples</span></code>.</li>
+<li><strong>read_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">read_samples</span></code>.</li>
+<li><strong>write_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">write_samples</span></code>.</li>
 </ul>
 </td>
 </tr>
@@ -348,7 +348,7 @@ original parameter names.</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>other</strong> (<em>output file</em>) – The output file. Must be an hdf file.</li>
-<li><strong>ignore</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Don’t copy the given groups.</li>
+<li><strong>ignore</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Don’t copy the given groups.</li>
 </ul>
 </td>
 </tr>
@@ -382,11 +382,11 @@ original parameter names.</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>other</strong> (<em>InferenceFile</em>) – An open inference file to write to.</li>
 <li><strong>parameters</strong> (<em>list of str</em><em>, </em><em>optional</em>) – List of parameters to copy. If None, will copy all parameters.</li>
-<li><strong>parameter_names</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Rename one or more parameters to the given name. The dictionary
+<li><strong>parameter_names</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Rename one or more parameters to the given name. The dictionary
 should map parameter -&gt; parameter name. If None, will just use the
 original parameter names.</li>
-<li><strong>read_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">read_samples</span></code>.</li>
-<li><strong>write_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">write_samples</span></code>.</li>
+<li><strong>read_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">read_samples</span></code>.</li>
+<li><strong>write_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a><em>, </em><em>optional</em>) – Arguments to pass to <code class="docutils literal notranslate"><span class="pre">write_samples</span></code>.</li>
 </ul>
 </td>
 </tr>
@@ -417,9 +417,9 @@ implement their own options.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser" title="(in Python v3.7)"><em>argparse.ArgumentParser</em></a><em>, </em><em>optional</em>) – Instead of creating a parser, add arguments to the given one. If
+<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser" title="(in Python v3.8)"><em>argparse.ArgumentParser</em></a><em>, </em><em>optional</em>) – Instead of creating a parser, add arguments to the given one. If
 none provided, will create one.</li>
-<li><strong>skip_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Don’t include the given options. Options should be given as the
+<li><strong>skip_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Don’t include the given options. Options should be given as the
 option string, minus the ‘–’. For example,
 <code class="docutils literal notranslate"><span class="pre">skip_args=['iteration']</span></code> would cause the <code class="docutils literal notranslate"><span class="pre">--iteration</span></code>
 argument not to be included.</li>
@@ -451,18 +451,18 @@ retrieve a thinned array from an InferenceFile.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>thin_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The starting index to use. If None, will use the <code class="docutils literal notranslate"><span class="pre">thin_start</span></code>
+<li><strong>thin_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The starting index to use. If None, will use the <code class="docutils literal notranslate"><span class="pre">thin_start</span></code>
 attribute.</li>
-<li><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The interval to use. If None, will use the <code class="docutils literal notranslate"><span class="pre">thin_interval</span></code>
+<li><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The interval to use. If None, will use the <code class="docutils literal notranslate"><span class="pre">thin_interval</span></code>
 attribute.</li>
-<li><strong>thin_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The end index to use. If None, will use the <code class="docutils literal notranslate"><span class="pre">thin_end</span></code> attribute.</li>
+<li><strong>thin_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The end index to use. If None, will use the <code class="docutils literal notranslate"><span class="pre">thin_end</span></code> attribute.</li>
 </ul>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">The slice needed.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#slice" title="(in Python v3.7)">slice</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#slice" title="(in Python v3.8)">slice</a></p>
 </td>
 </tr>
 </tbody>
@@ -509,7 +509,7 @@ have a <code class="docutils literal notranslate"><span class="pre">parse_parame
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A list of strings giving the fields to load from the file.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)">list</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></p>
 </td>
 </tr>
 </tbody>
@@ -540,11 +540,11 @@ have a <code class="docutils literal notranslate"><span class="pre">parse_parame
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of group to read random state from.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>group</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of group to read random state from.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">A tuple with 5 elements that can be passed to numpy.set_state.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)">tuple</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)">tuple</a></td>
 </tr>
 </tbody>
 </table>
@@ -609,7 +609,7 @@ and <code class="docutils literal notranslate"><span class="pre">parse_parameter
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>opts</strong> (<em>argparse Namespace</em>) – The options with the settings to use for loading samples (the sort
 of thing returned by <code class="docutils literal notranslate"><span class="pre">ArgumentParser().parse_args</span></code>).</li>
-<li><strong>parameters</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – A list of the parameters to load. If none provided, will try to
+<li><strong>parameters</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – A list of the parameters to load. If none provided, will try to
 get the parameters to load from <code class="docutils literal notranslate"><span class="pre">opts.parameters</span></code>.</li>
 <li><strong>**kwargs</strong> – All other keyword arguments are passed to <code class="docutils literal notranslate"><span class="pre">read_samples</span></code>. These
 will override any options with the same name.</li>
@@ -687,7 +687,7 @@ command line and all previous command lines.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>injection_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Path to HDF injection file.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>injection_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Path to HDF injection file.</td>
 </tr>
 </tbody>
 </table>
@@ -725,8 +725,8 @@ attributes.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>lnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The log of the evidence.</li>
-<li><strong>dlnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The error in the estimate of the log evidence.</li>
+<li><strong>lnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – The log of the evidence.</li>
+<li><strong>dlnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – The error in the estimate of the log evidence.</li>
 </ul>
 </td>
 </tr>
@@ -762,8 +762,8 @@ attributes.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>group</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of group to write random state to.</li>
-<li><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.7)"><em>tuple</em></a><em>, </em><em>optional</em>) – Specify the random state to write. If None, will use
+<li><strong>group</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of group to write random state to.</li>
+<li><strong>state</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.8)"><em>tuple</em></a><em>, </em><em>optional</em>) – Specify the random state to write. If None, will use
 <code class="docutils literal notranslate"><span class="pre">numpy.random.get_state()</span></code>.</li>
 </ul>
 </td>
@@ -782,7 +782,7 @@ attributes.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Samples should be provided as a dictionary of numpy arrays.</li>
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Samples should be provided as a dictionary of numpy arrays.</li>
 <li><strong>**kwargs</strong> – Any other keyword args the sampler needs to write data.</li>
 </ul>
 </td>
@@ -838,7 +838,7 @@ level.</li>
 <dl class="class">
 <dt id="pycbc.inference.io.base_mcmc.MCMCMetadataIO">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.base_mcmc.</code><code class="descname">MCMCMetadataIO</code><a class="reference internal" href="_modules/pycbc/inference/io/base_mcmc.html#MCMCMetadataIO"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.base_mcmc.MCMCMetadataIO" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Provides functions for reading/writing MCMC metadata to file.</p>
 <dl class="staticmethod">
 <dt id="pycbc.inference.io.base_mcmc.MCMCMetadataIO.extra_args_parser">
@@ -850,9 +850,9 @@ samples.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser" title="(in Python v3.7)"><em>argparse.ArgumentParser</em></a><em>, </em><em>optional</em>) – Instead of creating a parser, add arguments to the given one. If
+<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser" title="(in Python v3.8)"><em>argparse.ArgumentParser</em></a><em>, </em><em>optional</em>) – Instead of creating a parser, add arguments to the given one. If
 none provided, will create one.</li>
-<li><strong>skip_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Don’t parse the given options. Options should be given as the
+<li><strong>skip_args</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Don’t parse the given options. Options should be given as the
 option string, minus the ‘–’. For example,
 <code class="docutils literal notranslate"><span class="pre">skip_args=['iteration']</span></code> would cause the <code class="docutils literal notranslate"><span class="pre">--iteration</span></code>
 argument not to be included.</li>
@@ -908,7 +908,7 @@ samples group.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body">A dictionary of the ACLs, keyed by the parameter name.</td>
 </tr>
-<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></td>
+<tr class="field-even field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></td>
 </tr>
 </tbody>
 </table>
@@ -922,7 +922,7 @@ samples group.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The interval to thin by.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The interval to thin by.</td>
 </tr>
 </tbody>
 </table>
@@ -947,7 +947,7 @@ parameters is saved to the file’s ‘acl’ attribute.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>acls</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – A dictionary of ACLs keyed by the parameter.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>acls</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – A dictionary of ACLs keyed by the parameter.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">The maximum of the acls that was written to the file.</td>
 </tr>
@@ -987,7 +987,7 @@ run was resumed from a checkpoint.</p>
 <dl class="class">
 <dt id="pycbc.inference.io.base_mcmc.SingleTempMCMCIO">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.base_mcmc.</code><code class="descname">SingleTempMCMCIO</code><a class="reference internal" href="_modules/pycbc/inference/io/base_mcmc.html#SingleTempMCMCIO"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.base_mcmc.SingleTempMCMCIO" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Provides functions for reading/writing samples from an MCMC sampler.</p>
 <p>These functions will work for samplers that have 1 or more walkers, with
 only a single temperature.</p>
@@ -1000,17 +1000,17 @@ only a single temperature.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – The list of field names to retrieve. Must be names of datasets in
+<li><strong>fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – The list of field names to retrieve. Must be names of datasets in
 the <code class="docutils literal notranslate"><span class="pre">samples_group</span></code>.</li>
-<li><strong>thin_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Start reading from the given iteration. Default is to start from
+<li><strong>thin_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Start reading from the given iteration. Default is to start from
 the first iteration.</li>
-<li><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Only read every <code class="docutils literal notranslate"><span class="pre">thin_interval</span></code> -th sample. Default is 1.</li>
-<li><strong>thin_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Stop reading at the given iteration. Default is to end at the last
+<li><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Only read every <code class="docutils literal notranslate"><span class="pre">thin_interval</span></code> -th sample. Default is 1.</li>
+<li><strong>thin_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Stop reading at the given iteration. Default is to end at the last
 iteration.</li>
-<li><strong>iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Only read the given iteration. If this provided, it overrides
+<li><strong>iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Only read the given iteration. If this provided, it overrides
 the <code class="docutils literal notranslate"><span class="pre">thin_(start|interval|end)</span></code> options.</li>
-<li><strong>walkers</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Only read from the given walkers. Default is to read all.</li>
-<li><strong>flatten</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – Flatten the samples to 1D arrays before returning. Otherwise, the
+<li><strong>walkers</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Only read from the given walkers. Default is to read all.</li>
+<li><strong>flatten</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Flatten the samples to 1D arrays before returning. Otherwise, the
 returned arrays will have shape (requested walkers x
 requested iteration(s)). Default is True.</li>
 </ul>
@@ -1019,7 +1019,7 @@ requested iteration(s)). Default is True.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">A dictionary of field name -&gt; numpy array pairs.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
 </td>
 </tr>
 </tbody>
@@ -1046,11 +1046,11 @@ sample, then none of the samples will be written.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
 shape nwalkers x niterations.</li>
-<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
+<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
 write all of the keys in the <code class="docutils literal notranslate"><span class="pre">samples</span></code> dict.</li>
-<li><strong>last_iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The iteration of the last sample. If the file’s <code class="docutils literal notranslate"><span class="pre">thinned_by</span></code>
+<li><strong>last_iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The iteration of the last sample. If the file’s <code class="docutils literal notranslate"><span class="pre">thinned_by</span></code>
 attribute is &gt; 1, this is needed to determine where to start
 thinning the samples such that the interval between the last sample
 currently on disk and the first new sample is the same as all of
@@ -1077,11 +1077,11 @@ the other samples.</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>fp</strong> (<em>MCMCMetadataIO instance</em>) – The file the sampels will be written to. Needed to determine the
 thin interval used on disk.</li>
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary mapping parameter names to arrays of (unthinned) samples.
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary mapping parameter names to arrays of (unthinned) samples.
 The arrays are thinned along their last dimension.</li>
 <li><strong>parameters</strong> (<em>list of str</em>) – The parameters to thin in <code class="docutils literal notranslate"><span class="pre">samples</span></code> before writing. All listed
 parameters must be in <code class="docutils literal notranslate"><span class="pre">samples</span></code>.</li>
-<li><strong>last_iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The iteration that the last sample in <code class="docutils literal notranslate"><span class="pre">samples</span></code> occurred at. This is
+<li><strong>last_iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The iteration that the last sample in <code class="docutils literal notranslate"><span class="pre">samples</span></code> occurred at. This is
 needed to figure out where to start the thinning in <code class="docutils literal notranslate"><span class="pre">samples</span></code>, such
 that the interval between the last sample on disk and the first new
 sample is the same as all of the other samples.</li>
@@ -1091,7 +1091,7 @@ sample is the same as all of the other samples.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Dictionary of the thinned samples to write.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
 </td>
 </tr>
 </tbody>
@@ -1105,7 +1105,7 @@ sample is the same as all of the other samples.</li>
 <dl class="class">
 <dt id="pycbc.inference.io.base_multitemper.MultiTemperedMCMCIO">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.base_multitemper.</code><code class="descname">MultiTemperedMCMCIO</code><a class="reference internal" href="_modules/pycbc/inference/io/base_multitemper.html#MultiTemperedMCMCIO"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.base_multitemper.MultiTemperedMCMCIO" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Provides functions for reading/writing samples from a parallel-tempered
 MCMC sampler.</p>
 <dl class="method">
@@ -1117,20 +1117,20 @@ MCMC sampler.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – The list of field names to retrieve. Must be names of datasets in
+<li><strong>fields</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – The list of field names to retrieve. Must be names of datasets in
 the <code class="docutils literal notranslate"><span class="pre">samples_group</span></code>.</li>
-<li><strong>thin_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Start reading from the given iteration. Default is to start from
+<li><strong>thin_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Start reading from the given iteration. Default is to start from
 the first iteration.</li>
-<li><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Only read every <code class="docutils literal notranslate"><span class="pre">thin_interval</span></code> -th sample. Default is 1.</li>
-<li><strong>thin_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Stop reading at the given iteration. Default is to end at the last
+<li><strong>thin_interval</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Only read every <code class="docutils literal notranslate"><span class="pre">thin_interval</span></code> -th sample. Default is 1.</li>
+<li><strong>thin_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Stop reading at the given iteration. Default is to end at the last
 iteration.</li>
-<li><strong>iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Only read the given iteration. If this provided, it overrides
+<li><strong>iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Only read the given iteration. If this provided, it overrides
 the <code class="docutils literal notranslate"><span class="pre">thin_(start|interval|end)</span></code> options.</li>
-<li><strong>temps</strong> (<em>'all'</em><em> or </em><em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The temperature index (or list of indices) to retrieve. To retrieve
+<li><strong>temps</strong> (<em>'all'</em><em> or </em><em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The temperature index (or list of indices) to retrieve. To retrieve
 all temperates pass ‘all’, or a list of all of the temperatures.
 Default is ‘all’.</li>
-<li><strong>walkers</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – Only read from the given walkers. Default is to read all.</li>
-<li><strong>flatten</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – Flatten the samples to 1D arrays before returning. Otherwise, the
+<li><strong>walkers</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – Only read from the given walkers. Default is to read all.</li>
+<li><strong>flatten</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Flatten the samples to 1D arrays before returning. Otherwise, the
 returned arrays will have shape (requested temps x
 requested walkers x requested iteration(s)). Default is True.</li>
 </ul>
@@ -1159,11 +1159,11 @@ is the name of a model params. The samples are written as an
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
 shape nwalkers x niterations.</li>
-<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
+<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
 write all of the keys in the <code class="docutils literal notranslate"><span class="pre">samples</span></code> dict.</li>
-<li><strong>last_iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The iteration of the last sample. If the file’s <code class="docutils literal notranslate"><span class="pre">thinned_by</span></code>
+<li><strong>last_iteration</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The iteration of the last sample. If the file’s <code class="docutils literal notranslate"><span class="pre">thinned_by</span></code>
 attribute is &gt; 1, this is needed to determine where to start
 thinning the samples to match what has already been stored on disk.</li>
 </ul>
@@ -1204,7 +1204,7 @@ MCMCMetadatIO.</p>
 <dl class="class">
 <dt id="pycbc.inference.io.base_multitemper.ParseTempsArg">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.base_multitemper.</code><code class="descname">ParseTempsArg</code><span class="sig-paren">(</span><em>type=&lt;type 'str'&gt;</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inference/io/base_multitemper.html#ParseTempsArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.base_multitemper.ParseTempsArg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Action" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Action</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Action" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Action</span></code></a></p>
 <p>Argparse action that will parse temps argument.</p>
 <p>If the provided argument is ‘all’, sets ‘all’ in the namespace dest. If a
 a sequence of numbers are provided, converts those numbers to ints before
@@ -1265,9 +1265,9 @@ array of length <code class="docutils literal notranslate"><span class="pre">nit
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
 length niterations.</li>
-<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
+<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
 write all of the keys in the <code class="docutils literal notranslate"><span class="pre">samples</span></code> dict.</li>
 </ul>
 </td>
@@ -1345,7 +1345,7 @@ checkpoint file.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>walkers</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The walker index (or a list of indices) to retrieve. If None,
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>walkers</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The walker index (or a list of indices) to retrieve. If None,
 samples from all walkers will be obtained.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Array of acceptance fractions with shape (requested walkers,).</td>
@@ -1402,9 +1402,9 @@ the <code class="docutils literal notranslate"><span class="pre">[sampler_group]
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>temps</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The temperature index (or a list of indices) to retrieve. If None,
+<li><strong>temps</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The temperature index (or a list of indices) to retrieve. If None,
 acfs from all temperatures and all walkers will be retrieved.</li>
-<li><strong>walkers</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – The walker index (or a list of indices) to retrieve. If None,
+<li><strong>walkers</strong> (<em>(</em><em>list of</em><em>) </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – The walker index (or a list of indices) to retrieve. If None,
 samples from all walkers will be obtained.</li>
 </ul>
 </td>
@@ -1484,10 +1484,10 @@ stats if they exist.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>lnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The log of the evidence.</li>
-<li><strong>dlnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The error in the estimate of the log evidence.</li>
-<li><strong>importance_lnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – The importance-weighted log of the evidence.</li>
-<li><strong>importance_dlnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a><em>, </em><em>optional</em>) – The error in the importance-weighted estimate of the log evidence.</li>
+<li><strong>lnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – The log of the evidence.</li>
+<li><strong>dlnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – The error in the estimate of the log evidence.</li>
+<li><strong>importance_lnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a><em>, </em><em>optional</em>) – The importance-weighted log of the evidence.</li>
+<li><strong>importance_dlnz</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a><em>, </em><em>optional</em>) – The error in the importance-weighted estimate of the log evidence.</li>
 </ul>
 </td>
 </tr>
@@ -1526,9 +1526,9 @@ array of length <code class="docutils literal notranslate"><span class="pre">nit
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
 length niterations.</li>
-<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
+<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
 write all of the keys in the <code class="docutils literal notranslate"><span class="pre">samples</span></code> dict.</li>
 </ul>
 </td>
@@ -1570,7 +1570,7 @@ write all of the keys in the <code class="docutils literal notranslate"><span cl
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Samples should be provided as a dictionary of numpy arrays.</li>
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Samples should be provided as a dictionary of numpy arrays.</li>
 <li><strong>**kwargs</strong> – Any other keyword args the sampler needs to write data.</li>
 </ul>
 </td>
@@ -1599,9 +1599,9 @@ array of length <code class="docutils literal notranslate"><span class="pre">nit
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>fp</strong> (<em>self</em>) – Pass the ‘self’ from BaseInferenceFile class.</li>
-<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
+<li><strong>samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – The samples to write. Each array in the dictionary should have
 length niterations.</li>
-<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
+<li><strong>parameters</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a><em>, </em><em>optional</em>) – Only write the specified parameters to the file. If None, will
 write all of the keys in the <code class="docutils literal notranslate"><span class="pre">samples</span></code> dict.</li>
 </ul>
 </td>
@@ -1618,7 +1618,7 @@ inference samplers generate and are stored in an ASCII TXT file.</p>
 <dl class="class">
 <dt id="pycbc.inference.io.txt.InferenceTXTFile">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.txt.</code><code class="descname">InferenceTXTFile</code><span class="sig-paren">(</span><em>path</em>, <em>mode=None</em>, <em>delimiter=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inference/io/txt.html#InferenceTXTFile"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.txt.InferenceTXTFile" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>A class that has extra functions for handling reading the samples
 from posterior-only TXT files.</p>
 <table class="docutils field-list" frame="void" rules="none">
@@ -1626,9 +1626,9 @@ from posterior-only TXT files.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The path to the TXT file.</li>
+<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The path to the TXT file.</li>
 <li><strong>mode</strong> (<em>{None</em><em>, </em><em>str}</em>) – The mode to open the file. Only accepts “r” or “rb” for reading.</li>
-<li><strong>delimiter</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Delimiter to use for TXT file. Default is space-delimited.</li>
+<li><strong>delimiter</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Delimiter to use for TXT file. Default is space-delimited.</li>
 </ul>
 </td>
 </tr>
@@ -1658,10 +1658,10 @@ from posterior-only TXT files.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>output_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The path of the file to write.</li>
+<li><strong>output_file</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The path of the file to write.</li>
 <li><strong>samples</strong> (<a class="reference internal" href="pycbc.io.html#pycbc.io.record.FieldArray" title="pycbc.io.record.FieldArray"><em>FieldArray</em></a>) – Samples to write to file.</li>
-<li><strong>labels</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – A list of strings to include as header in TXT file.</li>
-<li><strong>delimiter</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Delimiter to use in TXT file.</li>
+<li><strong>labels</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – A list of strings to include as header in TXT file.</li>
+<li><strong>delimiter</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Delimiter to use in TXT file.</li>
 </ul>
 </td>
 </tr>
@@ -1686,7 +1686,7 @@ no file(s) were provided.</p>
 <dl class="class">
 <dt id="pycbc.inference.io.PrintFileParams">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.</code><code class="descname">PrintFileParams</code><span class="sig-paren">(</span><em>skip_args=None</em>, <em>nargs=0</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inference/io.html#PrintFileParams"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.PrintFileParams" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Action" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Action</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Action" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Action</span></code></a></p>
 <p>Argparse action that will load input files and print possible parameters
 to screen. Once this is done, the program is forced to exit immediately.</p>
 <p>The behvior is similar to –help, except that the input-file is read.</p>
@@ -1700,7 +1700,7 @@ this action is called. Otherwise, a <code class="docutils literal notranslate"><
 <dl class="class">
 <dt id="pycbc.inference.io.ResultsArgumentParser">
 <em class="property">class </em><code class="descclassname">pycbc.inference.io.</code><code class="descname">ResultsArgumentParser</code><span class="sig-paren">(</span><em>skip_args=None</em>, <em>defaultparams=None</em>, <em>autoparamlabels=True</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inference/io.html#ResultsArgumentParser"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.io.ResultsArgumentParser" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.ArgumentParser</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.ArgumentParser" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.ArgumentParser</span></code></a></p>
 <p>Wraps argument parser, and preloads arguments needed for loading samples
 from a file.</p>
 <p>This parser class should be used by any program that wishes to use the
@@ -1737,7 +1737,7 @@ added.</li>
 load. If ‘all’ will load all parameters in the file’s
 <code class="docutils literal notranslate"><span class="pre">samples_group</span></code>. If ‘variable_params’ or None (the default) will load
 the variable parameters.</li>
-<li><strong>autoparamlabels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – Passed to <code class="docutils literal notranslate"><span class="pre">add_results_option_group</span></code>; see that function for details.</li>
+<li><strong>autoparamlabels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Passed to <code class="docutils literal notranslate"><span class="pre">add_results_option_group</span></code>; see that function for details.</li>
 <li><strong>**kwargs</strong> – All other keyword arguments are passed to <code class="docutils literal notranslate"><span class="pre">argparse.ArgumentParser</span></code>.</li>
 </ul>
 </td>
@@ -1764,7 +1764,7 @@ be added.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>autoparamlabels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – If True, the <code class="docutils literal notranslate"><span class="pre">--parameters</span></code> option will use labels from
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>autoparamlabels</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – If True, the <code class="docutils literal notranslate"><span class="pre">--parameters</span></code> option will use labels from
 <code class="docutils literal notranslate"><span class="pre">waveform.parameters</span></code> if a parameter name is the same as a
 parameter there. Otherwise, will just use whatever label is
 provided. Default is True.</td>
@@ -1799,13 +1799,13 @@ group be read?</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of an InferenceFile to check.</p>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><p class="first"><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of an InferenceFile to check.</p>
 </td>
 </tr>
 <tr class="field-even field"><th class="field-name">Raises:</th><td class="field-body"><ul class="first last simple">
-<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> – If the given file does not exist.</li>
-<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> – If the samples group does not exist.</li>
-<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#IOError" title="(in Python v3.7)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IOError</span></code></a> – If any of the checks fail.</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#ValueError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">ValueError</span></code></a> – If the given file does not exist.</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#KeyError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">KeyError</span></code></a> – If the samples group does not exist.</li>
+<li><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#IOError" title="(in Python v3.8)"><code class="xref py py-exc docutils literal notranslate"><span class="pre">IOError</span></code></a> – If any of the checks fail.</li>
 </ul>
 </td>
 </tr>
@@ -1824,7 +1824,7 @@ group be read?</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>input_files</strong> (<em>list of str</em>) – List of input files to load.</li>
-<li><strong>collection</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – What group of parameters to load. Can be the name of a list of
+<li><strong>collection</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – What group of parameters to load. Can be the name of a list of
 parameters stored in the files’ attrs (e.g., “variable_params”), or
 “all”. If “all”, will load all of the parameters in the files’
 samples group. Default is to load all.</li>
@@ -1834,7 +1834,7 @@ samples group. Default is to load all.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">List of the parameter names.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)">list</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></p>
 </td>
 </tr>
 </tbody>
@@ -1849,7 +1849,7 @@ samples group. Default is to load all.</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of file.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>filename</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of file.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>file_type</strong> – The type of inference file object to use.</td>
 </tr>
@@ -1890,10 +1890,10 @@ be raised if <code class="docutils literal notranslate"><span class="pre">filety
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The filename to load.</li>
-<li><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – What mode to load the file with, e.g., ‘w’ for write, ‘r’ for read,
+<li><strong>path</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The filename to load.</li>
+<li><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – What mode to load the file with, e.g., ‘w’ for write, ‘r’ for read,
 ‘a’ for append. Default will default to h5py.File’s mode, which is ‘a’.</li>
-<li><strong>filetype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – Force the file to be loaded with the given class name. This must be
+<li><strong>filetype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – Force the file to be loaded with the given class name. This must be
 provided if creating a new file.</li>
 </ul>
 </td>
@@ -1921,7 +1921,7 @@ from the command line options.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>opts</strong> (<em>ArgumentParser options</em>) – The options from the command line.</li>
-<li><strong>load_samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – Load the samples from the file.</li>
+<li><strong>load_samples</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Load the samples from the file.</li>
 </ul>
 </td>
 </tr>
@@ -1975,7 +1975,7 @@ backup files are either both valid or both invalid.</p>
 samples.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)">bool</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)">bool</a></p>
 </td>
 </tr>
 </tbody>
@@ -2007,7 +2007,7 @@ samples.</p>
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 11, 2019.
+        Last updated on Oct 21, 2019.
       </span>
 
     </p>

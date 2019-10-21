@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.frame package &mdash; PyCBC 6c28da documentation</title>
+  <title>pycbc.frame package &mdash; PyCBC 8308b8 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                None
+                1.14.2
               </div>
             
           
@@ -311,8 +311,8 @@ the frame file/cache for a given channel or channels.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>frame_type</strong> (<em>string</em>) – The string representation of the frame type (ex. ‘H1_ER_C00_L1’)</li>
-<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The start time that we need the frames to span.</li>
-<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The end time that we need the frames to span.</li>
+<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The start time that we need the frames to span.</li>
+<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The end time that we need the frames to span.</li>
 <li><strong>server</strong> (<em>{None</em><em>, </em><em>SERVER:PORT string}</em><em>, </em><em>optional</em>) – Optional string to specify the datafind server to use. By default an
 attempt is made to use a local datafind server.</li>
 <li><strong>url_type</strong> (<em>string</em>) – Returns only frame URLs with a particular scheme or head such
@@ -368,9 +368,9 @@ a time series containing the channel between the given start and end times.</p>
 <li><strong>frame_type</strong> (<em>string</em>) – The type of frame file that we are looking for.</li>
 <li><strong>channels</strong> (<em>string</em><em> or </em><em>list of strings</em>) – Either a string that contains the channel name or a list of channel
 name strings.</li>
-<li><strong>start_time</strong> (<em>LIGOTimeGPS</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The gps start time of the time series. Defaults to reading from the
+<li><strong>start_time</strong> (<em>LIGOTimeGPS</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The gps start time of the time series. Defaults to reading from the
 beginning of the available frame(s).</li>
-<li><strong>end_time</strong> (<em>LIGOTimeGPS</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The gps end time of the time series. Defaults to the end of the frame.</li>
+<li><strong>end_time</strong> (<em>LIGOTimeGPS</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The gps end time of the time series. Defaults to the end of the frame.</li>
 <li><strong>sieve</strong> (<em>string</em><em>, </em><em>optional</em>) – Selects only frames where the frame URL matches the regular
 expression sieve</li>
 <li><strong>check_integrity</strong> (<em>boolean</em>) – Do an expensive checksum of the file before returning.</li>
@@ -411,9 +411,9 @@ the frame file/cache for a given channel or channels.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>ifo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The name of the IFO to find the information about.</li>
-<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The gps time in GPS seconds</li>
-<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The end time in GPS seconds</li>
+<li><strong>ifo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The name of the IFO to find the information about.</li>
+<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The gps time in GPS seconds</li>
+<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The end time in GPS seconds</li>
 </ul>
 </td>
 </tr>
@@ -421,7 +421,7 @@ the frame file/cache for a given channel or channels.</p>
 requested times.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
 </td>
 </tr>
 </tbody>
@@ -437,9 +437,9 @@ requested times.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>ifo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The name of the IFO to find the information about.</li>
-<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The gps time in GPS seconds</li>
-<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The end time in GPS seconds</li>
+<li><strong>ifo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The name of the IFO to find the information about.</li>
+<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The gps time in GPS seconds</li>
+<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The end time in GPS seconds</li>
 </ul>
 </td>
 </tr>
@@ -447,7 +447,7 @@ requested times.</p>
 requested times.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)">list</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)">list</a></p>
 </td>
 </tr>
 </tbody>
@@ -463,9 +463,9 @@ requested times.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>channels</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – The channel name to read or list of channel names.</li>
-<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The gps time in GPS seconds</li>
-<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The end time in GPS seconds</li>
+<li><strong>channels</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – The channel name to read or list of channel names.</li>
+<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The gps time in GPS seconds</li>
+<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The end time in GPS seconds</li>
 </ul>
 </td>
 </tr>
@@ -488,9 +488,9 @@ requested times.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>ifo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – The name of the IFO to read data for. Ex. ‘H1’, ‘L1’, ‘V1’</li>
-<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The gps time in GPS seconds</li>
-<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The end time in GPS seconds</li>
+<li><strong>ifo</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – The name of the IFO to read data for. Ex. ‘H1’, ‘L1’, ‘V1’</li>
+<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The gps time in GPS seconds</li>
+<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The end time in GPS seconds</li>
 </ul>
 </td>
 </tr>
@@ -517,10 +517,10 @@ requested times.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Name of hdf store file</li>
-<li><strong>channel</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Channel name to read</li>
-<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – GPS time to start reading from</li>
-<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – GPS time to end time series</li>
+<li><strong>fname</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Name of hdf store file</li>
+<li><strong>channel</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Channel name to read</li>
+<li><strong>start_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – GPS time to start reading from</li>
+<li><strong>end_time</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – GPS time to end time series</li>
 </ul>
 </td>
 </tr>
@@ -569,7 +569,7 @@ and returns the corresponding bit mask.</p>
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 11, 2019.
+        Last updated on Oct 21, 2019.
       </span>
 
     </p>

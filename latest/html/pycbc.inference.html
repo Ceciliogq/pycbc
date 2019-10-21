@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.inference package &mdash; PyCBC 6c28da documentation</title>
+  <title>pycbc.inference package &mdash; PyCBC 8308b8 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                None
+                1.14.2
               </div>
             
           
@@ -312,7 +312,7 @@ have burned in.</p>
 <dl class="class">
 <dt id="pycbc.inference.burn_in.MCMCBurnInTests">
 <em class="property">class </em><code class="descclassname">pycbc.inference.burn_in.</code><code class="descname">MCMCBurnInTests</code><span class="sig-paren">(</span><em>sampler</em>, <em>burn_in_test</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inference/burn_in.html#MCMCBurnInTests"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.burn_in.MCMCBurnInTests" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Provides methods for estimating burn-in of an ensemble MCMC.</p>
 <dl class="attribute">
 <dt id="pycbc.inference.burn_in.MCMCBurnInTests.available_tests">
@@ -396,9 +396,9 @@ considered to be the same.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>samples1</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of mapping parameters to the first set of samples.</li>
-<li><strong>samples2</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of mapping parameters to the second set of samples.</li>
-<li><strong>threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The thershold to use for the p-value. Default is 0.9.</li>
+<li><strong>samples1</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of mapping parameters to the first set of samples.</li>
+<li><strong>samples2</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of mapping parameters to the second set of samples.</li>
+<li><strong>threshold</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – The thershold to use for the p-value. Default is 0.9.</li>
 </ul>
 </td>
 </tr>
@@ -406,7 +406,7 @@ considered to be the same.</p>
 given parameter passes the KS test.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
 </td>
 </tr>
 </tbody>
@@ -424,7 +424,7 @@ given parameter passes the KS test.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>lnps_per_walker</strong> (<em>2D array</em>) – Array of values that are proportional to the log posterior values. Must
 have shape <code class="docutils literal notranslate"><span class="pre">nwalkers</span> <span class="pre">x</span> <span class="pre">niterations</span></code>.</li>
-<li><strong>dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The dimension of the parameter space.</li>
+<li><strong>dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The dimension of the parameter space.</li>
 </ul>
 </td>
 </tr>
@@ -450,7 +450,7 @@ index will be be equal to the length of the chain.</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>logposts</strong> (<em>array</em>) – 1D array of values that are proportional to the log posterior values.</li>
-<li><strong>dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The dimension of the parameter space.</li>
+<li><strong>dim</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The dimension of the parameter space.</li>
 </ul>
 </td>
 </tr>
@@ -458,7 +458,7 @@ index will be be equal to the length of the chain.</li>
 never happened, returns 0.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)">int</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></p>
 </td>
 </tr>
 </tbody>
@@ -485,7 +485,7 @@ available in numpy.histogram</p>
 <li><strong>samples</strong> (<em>numpy.array</em>) – Set of samples to get the min/max if only one of the bounds is given.</li>
 <li><strong>hist_min</strong> (<em>numpy.float64</em>) – Minimum value for the histogram.</li>
 <li><strong>hist_max</strong> (<em>numpy.float64</em>) – Maximum value for the histogram.</li>
-<li><strong>hist_bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – If int, number of equal-width bins to use in numpy.histogram. If str,
+<li><strong>hist_bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – If int, number of equal-width bins to use in numpy.histogram. If str,
 it should be one of the methods to calculate the optimal bin width
 available in numpy.histogram: [‘auto’, ‘fd’, ‘doane’, ‘scott’, ‘stone’,
 ‘rice’, ‘sturges’, ‘sqrt’]. Default is ‘fd’ (Freedman Diaconis
@@ -514,9 +514,9 @@ Estimator). This option will be ignored if <cite>kde=True</cite>.</li>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>samples</strong> (<em>numpy.array</em>) – Set of samples to calculate the pdf.</li>
-<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Method to calculate the pdf. Options are ‘kde’ for the Kernel Density
+<li><strong>method</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Method to calculate the pdf. Options are ‘kde’ for the Kernel Density
 Estimator, and ‘hist’ to use numpy.histogram</li>
-<li><strong>bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em>, </em><em>optional</em>) – This option will be ignored if method is <cite>kde</cite>.
+<li><strong>bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em>, </em><em>optional</em>) – This option will be ignored if method is <cite>kde</cite>.
 If int, number of equal-width bins to use when calculating probability
 density function from a set of samples of the distribution. If str, it
 should be one of the methods to calculate the optimal bin width
@@ -578,9 +578,9 @@ from two distributions.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>samples1</strong> (<em>numpy.array</em>) – Samples.</li>
 <li><strong>samples2</strong> (<em>numpy.array</em>) – Samples.</li>
-<li><strong>kde</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Set to <cite>True</cite> to estimate the probability density function using
+<li><strong>kde</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – Set to <cite>True</cite> to estimate the probability density function using
 kernel density estimation (KDE).</li>
-<li><strong>bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – If int, number of equal-width bins to use when calculating probability
+<li><strong>bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – If int, number of equal-width bins to use when calculating probability
 density function from a set of samples of the distribution. If str, it
 should be one of the methods to calculate the optimal bin width
 available in numpy.histogram: [‘auto’, ‘fd’, ‘doane’, ‘scott’, ‘stone’,
@@ -619,12 +619,12 @@ from two distributions.</p>
 <cite>pdf1=True</cite>).</li>
 <li><strong>samples2</strong> (<em>numpy.array</em>) – Samples or probability density function (for the latter must also set
 <cite>pdf2=True</cite>).</li>
-<li><strong>pdf1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Set to <cite>True</cite> if <cite>samples1</cite> is a probability density funtion already.</li>
-<li><strong>pdf2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Set to <cite>True</cite> if <cite>samples2</cite> is a probability density funtion already.</li>
-<li><strong>kde</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – Set to <cite>True</cite> if at least one of <cite>pdf1</cite> or <cite>pdf2</cite> is <cite>False</cite> to
+<li><strong>pdf1</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – Set to <cite>True</cite> if <cite>samples1</cite> is a probability density funtion already.</li>
+<li><strong>pdf2</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – Set to <cite>True</cite> if <cite>samples2</cite> is a probability density funtion already.</li>
+<li><strong>kde</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – Set to <cite>True</cite> if at least one of <cite>pdf1</cite> or <cite>pdf2</cite> is <cite>False</cite> to
 estimate the probability density function using kernel density
 estimation (KDE).</li>
-<li><strong>bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a><em>, </em><em>optional</em>) – If int, number of equal-width bins to use when calculating probability
+<li><strong>bins</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a><em>, </em><em>optional</em>) – If int, number of equal-width bins to use when calculating probability
 density function from a set of samples of the distribution. If str, it
 should be one of the methods to calculate the optimal bin width
 available in numpy.histogram: [‘auto’, ‘fd’, ‘doane’, ‘scott’, ‘stone’,
@@ -670,7 +670,7 @@ distribution.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Estimation of the log of the evidence.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)">float</a></td>
 </tr>
 </tbody>
 </table>
@@ -693,7 +693,7 @@ distribution.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body">Estimation of the log of the evidence.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)">float</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)">float</a></td>
 </tr>
 </tbody>
 </table>
@@ -785,7 +785,7 @@ should go to 1.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>chains</strong> (<em>iterable</em>) – An iterable of numpy.array instances that contain the samples
 for each chain. Each chain has shape (nparameters, niterations).</li>
-<li><strong>auto_burn_in</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a>) – If True, then only use later half of samples provided.</li>
+<li><strong>auto_burn_in</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a>) – If True, then only use later half of samples provided.</li>
 </ul>
 </td>
 </tr>
@@ -813,9 +813,9 @@ statistic for each step.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>chains</strong> (<em>iterable</em>) – An iterable of numpy.array instances that contain the samples
 for each chain. Each chain has shape (nparameters, niterations).</li>
-<li><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Start index of blocks to calculate all statistics.</li>
-<li><strong>end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Last index of blocks to calculate statistics.</li>
-<li><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Step size to take for next block.</li>
+<li><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Start index of blocks to calculate all statistics.</li>
+<li><strong>end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Last index of blocks to calculate statistics.</li>
+<li><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Step size to take for next block.</li>
 </ul>
 </td>
 </tr>
@@ -848,13 +848,13 @@ statistic for each step.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>x</strong> (<em>numpy.array</em>) – A one-dimensional array of data.</li>
-<li><strong>seg_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of samples to use for each Geweke calculation.</li>
-<li><strong>seg_stride</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of samples to advance before next Geweke calculation.</li>
-<li><strong>end_idx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Index of last start.</li>
-<li><strong>ref_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Index of beginning of end reference segment.</li>
-<li><strong>ref_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Index of end of end reference segment. Default is None which
+<li><strong>seg_length</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Number of samples to use for each Geweke calculation.</li>
+<li><strong>seg_stride</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Number of samples to advance before next Geweke calculation.</li>
+<li><strong>end_idx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Index of last start.</li>
+<li><strong>ref_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Index of beginning of end reference segment.</li>
+<li><strong>ref_end</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Index of end of end reference segment. Default is None which
 will go to the end of the data array.</li>
-<li><strong>seg_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – What index to start computing the statistic. Default is 0 which
+<li><strong>seg_start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – What index to start computing the statistic. Default is 0 which
 will go to the beginning of the data array.</li>
 </ul>
 </td>
@@ -878,7 +878,7 @@ will go to the beginning of the data array.</li>
 <dl class="class">
 <dt id="pycbc.inference.option_utils.ParseLabelArg">
 <em class="property">class </em><code class="descclassname">pycbc.inference.option_utils.</code><code class="descname">ParseLabelArg</code><span class="sig-paren">(</span><em>type=&lt;type 'str'&gt;</em>, <em>nargs=None</em>, <em>**kwargs</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/inference/option_utils.html#ParseLabelArg"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.inference.option_utils.ParseLabelArg" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Action" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Action</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/argparse.html#argparse.Action" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">argparse.Action</span></code></a></p>
 <p>Argparse action that will parse arguments that can accept labels.</p>
 <p>This assumes that the values set on the command line for its assigned
 argument are strings formatted like <code class="docutils literal notranslate"><span class="pre">PARAM[:LABEL]</span></code>. When the arguments
@@ -945,7 +945,7 @@ as-is in the labels dictionaries.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – ArgumentParser instance.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – ArgumentParser instance.</td>
 </tr>
 </tbody>
 </table>
@@ -965,7 +965,7 @@ as-is in the labels dictionaries.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – ArgumentParser instance.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – ArgumentParser instance.</td>
 </tr>
 </tbody>
 </table>
@@ -979,7 +979,7 @@ as-is in the labels dictionaries.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – ArgumentParser instance.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – ArgumentParser instance.</td>
 </tr>
 </tbody>
 </table>
@@ -1023,7 +1023,7 @@ option group.</p>
 were specified in the –expected-parameters option will be included; if
 no parameters were provided, will return an empty dictionary.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></td>
 </tr>
 </tbody>
 </table>
@@ -1107,7 +1107,7 @@ will look in sections starting with ‘prior’.</li>
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 11, 2019.
+        Last updated on Oct 21, 2019.
       </span>
 
     </p>

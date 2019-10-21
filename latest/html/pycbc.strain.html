@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.strain package &mdash; PyCBC 6c28da documentation</title>
+  <title>pycbc.strain package &mdash; PyCBC 8308b8 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                None
+                1.14.2
               </div>
             
           
@@ -295,7 +295,7 @@
 <dl class="class">
 <dt id="pycbc.strain.calibration.Recalibrate">
 <em class="property">class </em><code class="descclassname">pycbc.strain.calibration.</code><code class="descname">Recalibrate</code><span class="sig-paren">(</span><em>ifo_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/strain/calibration.html#Recalibrate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.strain.calibration.Recalibrate" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <dl class="method">
 <dt id="pycbc.strain.calibration.Recalibrate.apply_calibration">
 <code class="descname">apply_calibration</code><span class="sig-paren">(</span><em>strain</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/strain/calibration.html#Recalibrate.apply_calibration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.strain.calibration.Recalibrate.apply_calibration" title="Permalink to this definition">¶</a></dt>
@@ -355,8 +355,8 @@ calibration parameters, then calling adjust_strain.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>strain</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.frequencyseries.FrequencySeries" title="pycbc.types.frequencyseries.FrequencySeries"><em>FrequencySeries</em></a>) – The strain to be recalibrated.</li>
-<li><strong>prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Prefix for calibration parameter names</li>
-<li><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of sampling parameters which includes
+<li><strong>prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Prefix for calibration parameter names</li>
+<li><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of sampling parameters which includes
 calibration parameters.</li>
 </ul>
 </td>
@@ -390,7 +390,7 @@ calibration parameters.</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – ArgumentParser instance.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – ArgumentParser instance.</td>
 </tr>
 </tbody>
 </table>
@@ -408,8 +408,8 @@ the gate, then FFT-ing back to the frequency domain.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>stilde_dict</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of frequency-domain strain, keyed by the ifos.</li>
-<li><strong>gates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of gates. Keys should be the ifo to apply the data to,
+<li><strong>stilde_dict</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of frequency-domain strain, keyed by the ifos.</li>
+<li><strong>gates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of gates. Keys should be the ifo to apply the data to,
 values are a tuple giving the central time of the gate, the half
 duration, and the taper duration.</li>
 </ul>
@@ -418,7 +418,7 @@ duration, and the taper duration.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Dictionary of frequency-domain strain with the gates applied.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
 </td>
 </tr>
 </tbody>
@@ -435,8 +435,8 @@ strain.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>strain_dict</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of time-domain strain, keyed by the ifos.</li>
-<li><strong>gates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of gates. Keys should be the ifo to apply the data to,
+<li><strong>strain_dict</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of time-domain strain, keyed by the ifos.</li>
+<li><strong>gates</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of gates. Keys should be the ifo to apply the data to,
 values are a tuple giving the central time of the gate, the half
 duration, and the taper duration.</li>
 </ul>
@@ -445,7 +445,7 @@ duration, and the taper duration.</li>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><p class="first">Dictionary of time-domain strain with the gates applied.</p>
 </td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)">dict</a></p>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><p class="first last"><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)">dict</a></p>
 </td>
 </tr>
 </tbody>
@@ -481,7 +481,7 @@ duration, and the taper duration.</li>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>data1</strong> (<em>pycbc.types.TimeSeries</em>) – First data set.</li>
 <li><strong>data2</strong> (<em>pycbc.types.TimeSeries</em>) – Second data set, with same duration and sample rate as data1.</li>
-<li><strong>bin_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Duration of the bins the data will be divided into to calculate
+<li><strong>bin_size</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Duration of the bins the data will be divided into to calculate
 the inner product.</li>
 </ul>
 </td>
@@ -507,7 +507,7 @@ the inner product.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>freqs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List containing the frequencies of the calibration lines.</li>
+<li><strong>freqs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – List containing the frequencies of the calibration lines.</li>
 <li><strong>data</strong> (<em>pycbc.types.TimeSeries</em>) – Strain data to extract the calibration lines from.</li>
 <li><strong>tref</strong> (<em>{None</em><em>, </em><em>float}</em><em>, </em><em>optional</em>) – Reference time for the line. If None, will use data.start_time.</li>
 </ul>
@@ -532,12 +532,12 @@ the inner product.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>freqs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List containing the frequencies of the wandering lines.</li>
+<li><strong>freqs</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – List containing the frequencies of the wandering lines.</li>
 <li><strong>data</strong> (<em>pycbc.types.TimeSeries</em>) – Strain data to extract the wandering lines from.</li>
-<li><strong>chunk</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Duration of the chunks the data will be divided into to account
+<li><strong>chunk</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Duration of the chunks the data will be divided into to account
 for the time variation of the wandering lines. Should be smaller
 than data.duration, and allow for at least a few chunks.</li>
-<li><strong>avg_bin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Duration of the bins each chunk will be divided into for averaging
+<li><strong>avg_bin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Duration of the bins each chunk will be divided into for averaging
 the inner product when measuring the parameters of the line. Should
 be smaller than chunk.</li>
 </ul>
@@ -561,7 +561,7 @@ be smaller than chunk.</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>complex_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List of complex numbers to calculate the median.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>complex_list</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – List of complex numbers to calculate the median.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>a + 1.j*b</strong> – The median of the real and imaginary parts.</td>
 </tr>
@@ -580,9 +580,9 @@ be smaller than chunk.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>freq</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Frequency of the line.</li>
+<li><strong>freq</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Frequency of the line.</li>
 <li><strong>data</strong> (<em>pycbc.types.TimeSeries</em>) – Reference data, to get delta_t, start_time, duration and sample_times.</li>
-<li><strong>tref</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Reference time for the line model.</li>
+<li><strong>tref</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Reference time for the line model.</li>
 <li><strong>amp</strong> (<em>{1.</em><em>, </em><em>float}</em><em>, </em><em>optional</em>) – Amplitude of the frequency line.</li>
 <li><strong>phi</strong> (<em>{0. float}</em><em>, </em><em>optional</em>) – Phase of the frequency line (radians).</li>
 </ul>
@@ -610,9 +610,9 @@ only the real part of the data.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>freq</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Frequency of the line to find in the data.</li>
+<li><strong>freq</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Frequency of the line to find in the data.</li>
 <li><strong>data</strong> (<em>pycbc.types.TimeSeries</em>) – Data from which the line wants to be measured.</li>
-<li><strong>tref</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Reference time for the frequency line.</li>
+<li><strong>tref</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Reference time for the frequency line.</li>
 <li><strong>bin_size</strong> (<em>{1</em><em>, </em><em>float}</em><em>, </em><em>optional</em>) – Duration of the bins the data will be divided into for averaging.</li>
 </ul>
 </td>
@@ -646,11 +646,11 @@ n_points)</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>minimum_frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>minimum_frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – </li>
 <li><strong>frequency of spline points</strong> (<em>maximum</em>) – </li>
-<li><strong>maximum_frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – </li>
+<li><strong>maximum_frequency</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – </li>
 <li><strong>frequency of spline points</strong> – </li>
-<li><strong>n_points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – </li>
+<li><strong>n_points</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – </li>
 <li><strong>of spline points</strong> (<em>number</em>) – </li>
 </ul>
 </td>
@@ -686,7 +686,7 @@ n_points)</p>
 <dl class="class">
 <dt id="pycbc.strain.recalibrate.PhysicalModel">
 <em class="property">class </em><code class="descclassname">pycbc.strain.recalibrate.</code><code class="descname">PhysicalModel</code><span class="sig-paren">(</span><em>freq=None</em>, <em>fc0=None</em>, <em>c0=None</em>, <em>d0=None</em>, <em>a_tst0=None</em>, <em>a_pu0=None</em>, <em>fs0=None</em>, <em>qinv0=None</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/strain/recalibrate.html#PhysicalModel"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.strain.recalibrate.PhysicalModel" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Class for adjusting time-varying calibration parameters of given
 strain data.</p>
 <dl class="attribute">
@@ -710,7 +710,7 @@ strain data.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>strain</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.frequencyseries.FrequencySeries" title="pycbc.types.frequencyseries.FrequencySeries"><em>FrequencySeries</em></a>) – The strain to be adjusted.</li>
 <li><strong>freq</strong> (<em>array</em>) – The frequencies corresponding to the values of c0, d0, a0 in Hertz.</li>
-<li><strong>fc0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t0, when c0=c(t0) and a0=a(t0) are
+<li><strong>fc0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t0, when c0=c(t0) and a0=a(t0) are
 measured.</li>
 <li><strong>c0</strong> (<em>array</em>) – Initial sensing function at t0 for the frequencies.</li>
 <li><strong>d0</strong> (<em>array</em>) – Digital filter for the frequencies.</li>
@@ -718,8 +718,8 @@ measured.</li>
 frequencies.</li>
 <li><strong>a_pu0</strong> (<em>array</em>) – Initial actuation function for the penultimate mass at t0 for the
 frequencies.</li>
-<li><strong>fs0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Initial spring frequency at t0 for the signal recycling cavity.</li>
-<li><strong>qinv0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Initial inverse quality factor at t0 for the signal recycling
+<li><strong>fs0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Initial spring frequency at t0 for the signal recycling cavity.</li>
+<li><strong>qinv0</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Initial inverse quality factor at t0 for the signal recycling
 cavity.</li>
 </ul>
 </td>
@@ -737,18 +737,18 @@ calibration parameters kappa_c(t), kappa_a(t), f_c(t), fs, and qinv.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>strain</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.frequencyseries.FrequencySeries" title="pycbc.types.frequencyseries.FrequencySeries"><em>FrequencySeries</em></a>) – The strain data to be adjusted.</li>
-<li><strong>delta_fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Change in coupled-cavity (CC) pole at time t.</li>
-<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Scalar correction factor for sensing function c0 at time t.</li>
-<li><strong>kappa_tst_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
+<li><strong>delta_fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Change in coupled-cavity (CC) pole at time t.</li>
+<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Scalar correction factor for sensing function c0 at time t.</li>
+<li><strong>kappa_tst_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
 A_{tst0} at time t.</li>
-<li><strong>kappa_tst_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
+<li><strong>kappa_tst_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
 A_tst0 at time t.</li>
-<li><strong>kappa_pu_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
+<li><strong>kappa_pu_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
 A_{pu0} at time t.</li>
-<li><strong>kappa_pu_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
+<li><strong>kappa_pu_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
 A_{pu0} at time t.</li>
-<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
-<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
+<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
+<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
 </ul>
 </td>
 </tr>
@@ -802,7 +802,7 @@ calibration parameters, then calling adjust_strain.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>strain</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.frequencyseries.FrequencySeries" title="pycbc.types.frequencyseries.FrequencySeries"><em>FrequencySeries</em></a>) – The strain to be recalibrated.</li>
-<li><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of sampling parameters which includes
+<li><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of sampling parameters which includes
 calibration parameters.</li>
 </ul>
 </td>
@@ -858,10 +858,10 @@ kappa_c(t), kappa_a(t), f_c(t), fs, and qinv.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t.</li>
-<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Scalar correction factor for sensing function at time t.</li>
-<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
-<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t.</li>
+<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Scalar correction factor for sensing function at time t.</li>
+<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
+<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
 </ul>
 </td>
 </tr>
@@ -885,18 +885,18 @@ kappa_c(t), kappa_a(t), f_c(t), fs, and qinv.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t.</li>
-<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Scalar correction factor for sensing function c at time t.</li>
-<li><strong>kappa_tst_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t.</li>
+<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Scalar correction factor for sensing function c at time t.</li>
+<li><strong>kappa_tst_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
 a_tst0 at time t.</li>
-<li><strong>kappa_pu_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
+<li><strong>kappa_pu_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
 a_pu0 at time t.</li>
-<li><strong>kappa_tst_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
+<li><strong>kappa_tst_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
 a_tst0 at time t.</li>
-<li><strong>kappa_pu_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
+<li><strong>kappa_pu_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
 a_pu0 at time t.</li>
-<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
-<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
+<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
+<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
 </ul>
 </td>
 </tr>
@@ -920,18 +920,18 @@ kappa_c(t), kappa_a(t), f_c(t), fs, and qinv.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t.</li>
-<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Scalar correction factor for sensing function c at time t.</li>
-<li><strong>kappa_tst_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
+<li><strong>fc</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Coupled-cavity (CC) pole at time t.</li>
+<li><strong>kappa_c</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Scalar correction factor for sensing function c at time t.</li>
+<li><strong>kappa_tst_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
 a_tst0 at time t.</li>
-<li><strong>kappa_pu_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
+<li><strong>kappa_pu_re</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Real part of scalar correction factor for actuation function
 a_pu0 at time t.</li>
-<li><strong>kappa_tst_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
+<li><strong>kappa_tst_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
 a_tst0 at time t.</li>
-<li><strong>kappa_pu_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
+<li><strong>kappa_pu_im</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Imaginary part of scalar correction factor for actuation function
 a_pu0 at time t.</li>
-<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
-<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
+<li><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Spring frequency for signal recycling cavity.</li>
+<li><strong>qinv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Inverse quality factor for signal recycling cavity.</li>
 </ul>
 </td>
 </tr>
@@ -950,7 +950,7 @@ a_pu0 at time t.</li>
 <dl class="class">
 <dt id="pycbc.strain.recalibrate.Recalibrate">
 <em class="property">class </em><code class="descclassname">pycbc.strain.recalibrate.</code><code class="descname">Recalibrate</code><span class="sig-paren">(</span><em>ifo_name</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/strain/recalibrate.html#Recalibrate"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.strain.recalibrate.Recalibrate" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Base class for modifying calibration</p>
 <dl class="method">
 <dt id="pycbc.strain.recalibrate.Recalibrate.apply_calibration">
@@ -1011,8 +1011,8 @@ calibration parameters, then calling adjust_strain.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>strain</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.frequencyseries.FrequencySeries" title="pycbc.types.frequencyseries.FrequencySeries"><em>FrequencySeries</em></a>) – The strain to be recalibrated.</li>
-<li><strong>prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.7)"><em>str</em></a>) – Prefix for calibration parameter names</li>
-<li><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.7)"><em>dict</em></a>) – Dictionary of sampling parameters which includes
+<li><strong>prefix</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.8)"><em>str</em></a>) – Prefix for calibration parameter names</li>
+<li><strong>params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.8)"><em>dict</em></a>) – Dictionary of sampling parameters which includes
 calibration parameters.</li>
 </ul>
 </td>
@@ -1059,7 +1059,7 @@ from the beginning.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blocksize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The number of seconds to attempt to read from the channel</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blocksize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The number of seconds to attempt to read from the channel</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>status</strong> – Returns True if this block is analyzable.</td>
 </tr>
@@ -1104,7 +1104,7 @@ a hardware injection.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blocksize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – The number of seconds to attempt to read from the channel</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>blocksize</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – The number of seconds to attempt to read from the channel</td>
 </tr>
 </tbody>
 </table>
@@ -1118,7 +1118,7 @@ a hardware injection.</p>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>delta_f</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – The sample step to generate overwhitened frequency domain data for</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>delta_f</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – The sample step to generate overwhitened frequency domain data for</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>htilde</strong> – Overwhited strain data</td>
 </tr>
@@ -1145,7 +1145,7 @@ a hardware injection.</p>
 <dl class="class">
 <dt id="pycbc.strain.strain.StrainSegments">
 <em class="property">class </em><code class="descclassname">pycbc.strain.strain.</code><code class="descname">StrainSegments</code><span class="sig-paren">(</span><em>strain</em>, <em>segment_length=None</em>, <em>segment_start_pad=0</em>, <em>segment_end_pad=0</em>, <em>trigger_start=None</em>, <em>trigger_end=None</em>, <em>filter_inj_only=False</em>, <em>injection_window=None</em>, <em>allow_zero_padding=False</em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pycbc/strain/strain.html#StrainSegments"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pycbc.strain.strain.StrainSegments" title="Permalink to this definition">¶</a></dt>
-<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
+<dd><p>Bases: <a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></a></p>
 <p>Class for managing manipulation of strain data for the purpose of
 matched filtering. This includes methods for segmenting and
 conditioning.</p>
@@ -1252,7 +1252,7 @@ frequency is used.</li>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>opt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – Result of parsing the CLI with OptionParser, or any object with the
+<li><strong>opt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – Result of parsing the CLI with OptionParser, or any object with the
 required attributes  (gps-start-time, gps-end-time, strain-high-pass,
 pad-data, sample-rate, (frame-cache or frame-files), channel-name,
 fake-strain, fake-strain-seed, fake-strain-from-file, gating_file).</li>
@@ -1300,7 +1300,7 @@ the window. The window function used for tapering is a Tukey window.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>data</strong> (<a class="reference internal" href="pycbc.types.html#pycbc.types.timeseries.TimeSeries" title="pycbc.types.timeseries.TimeSeries"><em>TimeSeries</em></a>) – The time series to be gated.</li>
-<li><strong>gate_params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List of parameters for the gating windows. Each element should be a
+<li><strong>gate_params</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – List of parameters for the gating windows. Each element should be a
 list or tuple with 3 elements: the central time of the gating window,
 the half-duration of the portion to zero out, and the duration of the
 Tukey tapering on each side. All times in seconds. The total duration
@@ -1331,8 +1331,8 @@ want to use these options in your code.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – OptionParser instance.</li>
-<li><strong>gps_times</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – Include <code class="docutils literal notranslate"><span class="pre">--gps-start-time</span></code> and <code class="docutils literal notranslate"><span class="pre">--gps-end-time</span></code> options. Default
+<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – OptionParser instance.</li>
+<li><strong>gps_times</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Include <code class="docutils literal notranslate"><span class="pre">--gps-start-time</span></code> and <code class="docutils literal notranslate"><span class="pre">--gps-end-time</span></code> options. Default
 is True.</li>
 </ul>
 </td>
@@ -1352,8 +1352,8 @@ want to use these options in your code.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – OptionParser instance.</li>
-<li><strong>gps_times</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.7)"><em>bool</em></a><em>, </em><em>optional</em>) – Include <code class="docutils literal notranslate"><span class="pre">--gps-start-time</span></code> and <code class="docutils literal notranslate"><span class="pre">--gps-end-time</span></code> options. Default
+<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – OptionParser instance.</li>
+<li><strong>gps_times</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.8)"><em>bool</em></a><em>, </em><em>optional</em>) – Include <code class="docutils literal notranslate"><span class="pre">--gps-start-time</span></code> and <code class="docutils literal notranslate"><span class="pre">--gps-end-time</span></code> options. Default
 is True.</li>
 </ul>
 </td>
@@ -1370,11 +1370,11 @@ is True.</li>
 <col class="field-name" />
 <col class="field-body" />
 <tbody valign="top">
-<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – A positive integer.</td>
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – A positive integer.</td>
 </tr>
 <tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><strong>m</strong> – Smallest integer power of 2 larger than n.</td>
 </tr>
-<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)">int</a></td>
+<tr class="field-odd field"><th class="field-name">Return type:</th><td class="field-body"><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)">int</a></td>
 </tr>
 </tbody>
 </table>
@@ -1391,11 +1391,11 @@ and reasonable.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>opt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – Result of parsing the CLI with OptionParser, or any object with the
+<li><strong>opt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – Result of parsing the CLI with OptionParser, or any object with the
 required attributes (gps-start-time, gps-end-time, strain-high-pass,
 pad-data, sample-rate, frame-cache, channel-name, fake-strain,
 fake-strain-seed).</li>
-<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – OptionParser instance.</li>
+<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – OptionParser instance.</li>
 </ul>
 </td>
 </tr>
@@ -1414,11 +1414,11 @@ and reasonable.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
-<li><strong>opt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – Result of parsing the CLI with OptionParser, or any object with the
+<li><strong>opt</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – Result of parsing the CLI with OptionParser, or any object with the
 required attributes (gps-start-time, gps-end-time, strain-high-pass,
 pad-data, sample-rate, frame-cache, channel-name, fake-strain,
 fake-strain-seed).</li>
-<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.7)"><em>object</em></a>) – OptionParser instance.</li>
+<li><strong>parser</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#object" title="(in Python v3.8)"><em>object</em></a>) – OptionParser instance.</li>
 <li><strong>ifos</strong> (<em>list of strings</em>) – List of ifos for which to verify options for</li>
 </ul>
 </td>
@@ -1481,7 +1481,7 @@ given configuration file.</p>
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 11, 2019.
+        Last updated on Oct 21, 2019.
       </span>
 
     </p>

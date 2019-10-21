@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>pycbc.population package &mdash; PyCBC 6c28da documentation</title>
+  <title>pycbc.population package &mdash; PyCBC 8308b8 documentation</title>
   
 
   
@@ -64,7 +64,7 @@
             
             
               <div class="version">
-                None
+                1.14.2
               </div>
             
           
@@ -519,11 +519,11 @@ a specified range of chirp mass.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
 <li><strong>hdfile</strong> – File that stores all the triggers</li>
-<li><strong>rhomin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Minimum value of SNR threhold (will need including ifar)</li>
+<li><strong>rhomin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Minimum value of SNR threhold (will need including ifar)</li>
 <li><strong>mass1</strong> (<em>array</em>) – First mass of the waveform in the template bank</li>
 <li><strong>mass2</strong> (<em>array</em>) – Second mass of the waveform in the template bank</li>
-<li><strong>lo_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Minimum chirp mass for the template</li>
-<li><strong>hi_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Maximum chirp mass for the template</li>
+<li><strong>lo_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Minimum chirp mass for the template</li>
+<li><strong>hi_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Maximum chirp mass for the template</li>
 </ul>
 </td>
 </tr>
@@ -551,9 +551,9 @@ Bank file is also provided to restrict triggers to BBH templates.</p>
 <li><strong>fname_statmap</strong> (<em>string</em>) – STATMAP file containing trigger information</li>
 <li><strong>fname_bank</strong> (<em>string</em>) – File name of the template bank</li>
 <li><strong>path</strong> (<em>string</em>) – Destination where txt file is saved</li>
-<li><strong>rhomin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Minimum value of SNR threhold (will need including ifar)</li>
-<li><strong>lo_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Minimum chirp mass for the template</li>
-<li><strong>hi_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Maximum chirp mass for template</li>
+<li><strong>rhomin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Minimum value of SNR threhold (will need including ifar)</li>
+<li><strong>lo_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Minimum chirp mass for the template</li>
+<li><strong>hi_mchirp</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Maximum chirp mass for template</li>
 </ul>
 </td>
 </tr>
@@ -602,9 +602,9 @@ Bank file is also provided to restrict triggers to BBH templates.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>min_z</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Minimum redshift</li>
-<li><strong>max_z</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Maximum redshift</li>
-<li><strong>nsamples</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.7)"><em>int</em></a>) – Number of samples</li>
+<li><strong>min_z</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Minimum redshift</li>
+<li><strong>max_z</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Maximum redshift</li>
+<li><strong>nsamples</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.8)"><em>int</em></a>) – Number of samples</li>
 </ul>
 </td>
 </tr>
@@ -681,8 +681,8 @@ injections for the distance distribution.</p>
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>string</em>) – Injections strategy</li>
 <li><strong>distance</strong> (<em>array</em>) – Array of distances</li>
-<li><strong>low_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Lower value of distance used in the injection strategy</li>
-<li><strong>high_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Higher value of distance used in the injection strategy</li>
+<li><strong>low_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Lower value of distance used in the injection strategy</li>
+<li><strong>high_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Higher value of distance used in the injection strategy</li>
 </ul>
 </td>
 </tr>
@@ -702,8 +702,8 @@ injections for the distance distribution.</p>
 <li><strong>key</strong> (<em>string</em>) – Injection strategy</li>
 <li><strong>mass1</strong> (<em>array</em>) – First mass of the injections</li>
 <li><strong>mass2</strong> (<em>array</em>) – Second mass of the injections</li>
-<li><strong>lomass</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Lower value of the mass distributions</li>
-<li><strong>himass</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – higher value of the mass distribution</li>
+<li><strong>lomass</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Lower value of the mass distributions</li>
+<li><strong>himass</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – higher value of the mass distribution</li>
 </ul>
 </td>
 </tr>
@@ -730,7 +730,7 @@ injections for the distance distribution.</p>
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first last simple">
 <li><strong>key</strong> (<em>string</em>) – Injections strategy</li>
-<li><strong>high_spin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.7)"><em>float</em></a>) – Maximum spin used in the strategy</li>
+<li><strong>high_spin</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.8)"><em>float</em></a>) – Maximum spin used in the strategy</li>
 <li><strong>spinz</strong> (<em>array</em>) – Spin of the injections (for one component)</li>
 </ul>
 </td>
@@ -778,10 +778,10 @@ Collect injection according to GPS.</p>
 <col class="field-body" />
 <tbody valign="top">
 <tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><ul class="first simple">
-<li><strong>sim_files</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – List containign names of the simulation files</li>
-<li><strong>m_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – The mass distribution used in the simulation runs</li>
-<li><strong>s_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – The spin distribution used in the simulation runs</li>
-<li><strong>d_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.7)"><em>list</em></a>) – The distance distribution used in the simulation runs</li>
+<li><strong>sim_files</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – List containign names of the simulation files</li>
+<li><strong>m_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – The mass distribution used in the simulation runs</li>
+<li><strong>s_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – The spin distribution used in the simulation runs</li>
+<li><strong>d_dist</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.8)"><em>list</em></a>) – The distance distribution used in the simulation runs</li>
 </ul>
 </td>
 </tr>
@@ -823,7 +823,7 @@ Collect injection according to GPS.</p>
     <p>
         &copy; Copyright 2015, 2016, 2017, Alexander Nitz, Ian Harry, Christopher M. Biwer, Duncan A.  Brown, Josh Willis, and Tito Dal Canton
       <span class="lastupdated">
-        Last updated on Oct 11, 2019.
+        Last updated on Oct 21, 2019.
       </span>
 
     </p>

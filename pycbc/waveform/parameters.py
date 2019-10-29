@@ -448,6 +448,10 @@ mode_array = Parameter("mode_array",
                             "By default pass None and let lalsimulation "
                             "use it's default behaviour."
                             "Example: mode_array = [ [2,2], [2,-2] ]")
+phenomXHMMband = Parameter("phenomXHMMband",
+                    dtype=float, default=None,
+                    description="Threshold for the multibanding algorithm in IMRPhenomXHM."
+                                "If option not specified use 10^-4. If set to 0 then multibanding is disabled.")
 #
 # =============================================================================
 #
@@ -494,7 +498,7 @@ common_generation_params = ParameterList([
 
 # Flags having discrete values, optional to generate either
 # a TD, FD, or frequency sequence waveform
-flags_generation_params = ParameterList([frame_axis, modes_choice, side_bands, mode_array])
+flags_generation_params = ParameterList([frame_axis, modes_choice, side_bands, mode_array, phenomXHMMband])
 
 # the following are parameters needed to generate an FD or TD waveform that
 # is equally sampled

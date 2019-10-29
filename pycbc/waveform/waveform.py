@@ -126,12 +126,14 @@ def _check_lal_pars(p):
     if p['side_bands']:
         lalsimulation.SimInspiralWaveformParamsInsertSideband(lal_pars, p['side_bands'])
     if p['mode_array'] is not None:
+        print("mode_array")
         ma = lalsimulation.SimInspiralCreateModeArray()
         for l,m in p['mode_array']:
             lalsimulation.SimInspiralModeArrayActivateMode(ma, l, m)
         lalsimulation.SimInspiralWaveformParamsInsertModeArray(lal_pars, ma)
-    if  p['phenomXHMMband'] is not None:
-        lalsimulation.SimInspiralWaveformPamsInsertPhenomXHMThresholdMband(lal_pars, p['phenomXHMMband'])
+    if p['phenomXHMMband'] is not None:
+        print("multibanding")
+        lalsimulation.SimInspiralWaveformParamsInsertPhenomXHMThresholdMband(lal_pars, p['phenomXHMMband'])
 
     return lal_pars
 

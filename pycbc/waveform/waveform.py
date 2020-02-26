@@ -132,6 +132,10 @@ def _check_lal_pars(p):
         lalsimulation.SimInspiralWaveformParamsInsertModeArray(lal_pars, ma)
     if p['phenomXHMMband'] is not None:
         lalsimulation.SimInspiralWaveformParamsInsertPhenomXHMThresholdMband(lal_pars, p['phenomXHMMband'])
+    if p['phenomXPHMMband'] is not None:
+        lalsimulation.SimInspiralWaveformParamsInsertPhenomXPHMThresholdMband(lal_pars, p['phenomXHMMband'])
+    if p['phenomXPrecVersion'] is not None:
+        lalsimulation.SimInspiralWaveformParamsInsertPhenomXPrecVersion(lal_pars, p['phenomXHMMband'])
 
     return lal_pars
 

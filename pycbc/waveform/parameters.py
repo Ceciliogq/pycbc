@@ -451,7 +451,16 @@ mode_array = Parameter("mode_array",
 phenomXHMMband = Parameter("phenomXHMMband",
                     dtype=float, default=None,
                     description="Threshold for the multibanding algorithm in IMRPhenomXHM."
-                                "If option not specified use 10^-4. If set to 0 then multibanding is disabled.")
+                                "If option not specified use 10^-3. If set to 0 then multibanding is disabled.")
+phenomXPHMMband = Parameter("phenomXPHMMband",
+                    dtype=float, default=None,
+                    description="Threshold for the multibanding algorithm in IMRPhenomXPHM."
+                                "If option not specified uses 0. If set to 0 then multibanding is disabled.")
+phenomXPrecVersion = Parameter("phenomXPrecVersion",
+                    dtype=int, default=None,
+                    description="Variable to control the version of the Euler angles in PhenomXP(HM)."
+                                "Example: 102 uses NNLO 'Pv2' angles. 223 uses MSA 'Pv3' angles."
+                                "If option not specified use 223.")
 #
 # =============================================================================
 #

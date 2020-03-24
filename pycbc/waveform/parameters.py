@@ -507,7 +507,7 @@ common_generation_params = ParameterList([
 
 # Flags having discrete values, optional to generate either
 # a TD, FD, or frequency sequence waveform
-flags_generation_params = ParameterList([frame_axis, modes_choice, side_bands, mode_array, phenomXHMMband])
+flags_generation_params = ParameterList([frame_axis, modes_choice, side_bands, mode_array, phenomXHMMband, phenomXPHMMband, phenomXPrecVersion])
 
 # the following are parameters needed to generate an FD or TD waveform that
 # is equally sampled
